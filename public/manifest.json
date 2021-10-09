@@ -1,0 +1,25 @@
+{
+  "short_name": "React App",
+  "name": "Create React App ",
+  "icons": [
+    {
+      "src": "https://i.pinimg.com/originals/3b/fa/60/3bfa607bad7b6f368d436f22217c307c.jpg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://i.pinimg.com/originals/3b/fa/60/3bfa607bad7b6f368d436f22217c307c.jpg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://i.pinimg.com/originals/3b/fa/60/3bfa607bad7b6f368d436f22217c307c.jpg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
