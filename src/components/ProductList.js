@@ -1,10 +1,17 @@
-import React from "react";
+import React,{useState, } from "react";
 import withContext from "../withContext";
 import { stockData } from "../db";
 import "../App.css";
 
 export const Stock = ({ company, vendor, category, stockPrice ,available, image}) => {
-  console.log(image)
+  var [count, setCount] = useState(0)
+
+ var incre= ()=>{
+   setCount(count++)
+ }
+ var decre= ()=>{
+  setCount(count--)
+}
   if (!company) return <div />;
   return (
 
@@ -27,11 +34,28 @@ export const Stock = ({ company, vendor, category, stockPrice ,available, image}
             <h4 className="table-text">{stockPrice}</h4>
           </td >
           <td>
-            <h4 className="table-text">Availability: {available}</h4>
+            <h4 className="table-text">{available === 0?"Out of Stock":"Available"}</h4>
           </td >
+          
+         
+        
         </tr>
+        
+       
       </tbody>
+      <button onClick={incre}>
+           +
+          </button>
+          <div>
+            {count}
+          </div>
+          <button onClick={decre}>
+            -
+          </button>
     </table>
+    
+    
+    
   );
 };
 

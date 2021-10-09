@@ -7,6 +7,7 @@ export const stockData = [
     category: "Vegtables",
     available:1, 
     image:"https://m.media-amazon.com/images/I/61yXL70-RaL._SX679_.jpg",
+    
   },
   {
     company: "Banana",
