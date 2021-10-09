@@ -2,19 +2,12 @@ import React, { Component } from "react";
 import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
-import AddProduct from './components/AddProduct';
 import ProductList from './components/ProductList';
 
 import Context from "./Context";
 import "./App.css";
 
 export default class App extends Component {
-
-  addProduct = (product, callback) => {
-    let products = this.state.products.slice();
-    products.push(product);
-    this.setState({ products }, () => callback && callback());
-  };
 
 
   render() {
